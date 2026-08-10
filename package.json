@@ -1,24 +1,56 @@
 {
-  "name": "arm-mcp-server",
-  "version": "0.3.0",
-  "private": true,
+  "name": "@autorabit-ai/arm-mcp-server",
+  "version": "0.5.0",
   "description": "MCP server for AutoRABIT ARM Developer APIs",
+  "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
+  "bin": {
+    "arm-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AutoRABIT-AI/ARM-MCP-Server.git"
+  },
+  "homepage": "https://github.com/AutoRABIT-AI/ARM-MCP-Server#readme",
+  "bugs": {
+    "url": "https://github.com/AutoRABIT-AI/ARM-MCP-Server/issues"
+  },
+  "keywords": [
+    "autorabit",
+    "arm",
+    "mcp",
+    "model-context-protocol",
+    "salesforce",
+    "ncino",
+    "deployment"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsx src/index.ts",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test test/**/*.test.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "npm run build"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.17.5"
+    "@modelcontextprotocol/sdk": "^1.30.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",
-    "tsx": "^4.20.5",
+    "tsx": "^4.23.12",
     "typescript": "^5.9.2"
   }
 }

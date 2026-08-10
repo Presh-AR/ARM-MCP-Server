@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: AutoRABIT product support
+    url: https://support.autorabit.com/
+    about: Use for tenant, product, licensing, and API-token support.
+  - name: Private security report
+    url: https://github.com/AutoRABIT-AI/ARM-MCP-Server/security/advisories/new
+    about: Report suspected vulnerabilities privately.
