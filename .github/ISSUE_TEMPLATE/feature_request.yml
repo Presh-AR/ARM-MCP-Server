@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose an ARM API tool or MCP workflow improvement
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: use-case
+    attributes:
+      label: MCP consumer use case
+      description: Describe the outcome an MCP client needs to achieve.
+    validations:
+      required: true
+  - type: input
+    id: api-reference
+    attributes:
+      label: AutoRABIT API reference
+      description: Link the published knowledge-base or Postman contract when applicable.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Include expected tools, resources, prompts, and safety constraints.
+    validations:
+      required: true
