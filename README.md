@@ -41,6 +41,12 @@ After the package is published to npm, it can also be run with:
 npx -y @autorabit-ai/arm-mcp-server
 ```
 
+## Quick Start Cookbooks
+
+Connect the server to Codex or Claude Code, then run copy-paste-ready workflows for PR readiness, daily deployment reporting, CI failure triage, nCino build health, audit review, and controlled build/deploy actions:
+
+- [ARM MCP Quick Start Cookbooks](docs/cookbooks/README.md)
+
 ## MCP Client Configuration
 
 Use the built server from a source checkout:
